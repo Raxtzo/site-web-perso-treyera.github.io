@@ -24,8 +24,14 @@
             text-align: center;
         }
 
+        h2{
+            background-color: transparent
+        }
+
         p {
             text-align: justify;
+            font: optional;
+            background-color: transparent;
         }
 
         .parallax {
@@ -49,24 +55,20 @@
             background-repeat: no-repeat;
             background-size: cover;
             font-size: larger;
+            font-family: monospace;
         }
 
         .content {
             padding: 50px;
             background-color: rgba(48,42,57,255);
+            text-align: center;
         }
 
         .text-block {
             background-color: transparent; 
             text-align: center;
-            margin-top: -600px;
             position: relative;
-            margin-top: -200px; 
-        }
-
-        .content{
-            text-align: justify;
-            
+            margin-top: 15px; 
         }
 
         .contact-form {
@@ -103,29 +105,37 @@
 
     <div class="content">
         <h2 style="background-color: transparent;">Qui suis-je?</h2>
-        <p style="background-color: transparent;">Je suis Treyer, un passionné de technologie, de programmation et de design. J'aime explorer de nouvelles idées et créer des solutions innovantes.</p>
+        <p style="text-align: center;" style="background-color: transparent;">Je je m'appelle André, un passionné de technologie, de programmation et de design. J'aime explorer de nouvelles idées et créer des solutions innovantes.</p>
     </div>
 
     <div class="parallax2">
         <div class="text-block">
-            <h2 style="background-color: transparent;">Mes intérêts</h2>
+            <h2 style="background-color: transparent; ">Mes intérêts</h2>
                 <section>
                     <p>Je m'intéresse à une variété de sujets, notamment:</p>
                     <ul>
                         <li>La programmation informatique</li>
                         <li>Les échecs</li>
-                        <li>La lécture</li>
+                        <li>La lecture</li>
                         <li>L'unihockey</li>
                         <li>Le piano</li>
                     </ul>
                 </section>
-        </div>
+                <br>
+                <hr>
+                <section>
+                    <div class="album-title">
+                        <h2 style="text-align: center;">Album favori:</h2>
+                    </div>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1GjjBpY2iDwSQs5bykQI5e?utm_source=generator" width="390" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </section>
+            </div>
     </div>
 
     <div class="content">
         <h2 style="background-color: transparent;">Contact</h2>
         <div class="contact-form">
-            <form action="#" method="post">
+            <form action="https://formsubmit.co/andrephilippe.treyer@proton.me" method="POST" >
                 <input type="text" name="name" placeholder="Votre nom" required>
                 <input type="email" name="email" placeholder="Votre email" required>
                 <textarea name="message" placeholder="Votre message" required></textarea>
